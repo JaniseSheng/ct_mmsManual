@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="./style/mms-scroller.css">
         <script type="text/javascript" src="./script/jquery.min.js"></script>
         <script type="text/javascript" src="./script/scrollReveal.min.js"></script>
+        <script type="text/javascript" src="./script/checkDeviceBrowser.js"></script>
         <script type="application/javascript" src="./script/scroller.js"></script>
         <script type="application/javascript" src="./script/fastclick.js"></script>
         <script type="application/javascript" src="./script/mms_Event.js"></script>
@@ -20,30 +21,30 @@
     <meta name="keywords" content="choice form,form,forms,choice,巧思问卷,调研,表单,在线问卷,问卷设计,">
   </head>
   <body class="nano">
+    <div class="help-menu"><i class="ic-folder-1"></i>
+      <h2 class="scrolltop">快速开始</h2>
+      <ul>
+        <li><i class="ic-document-1"></i><a rel="section0" class="help-list">旧财辅报账平台</a></li>
+        <li><i class="ic-document-1"></i><a rel="section1" class="help-list">新财辅报账平台</a></li>
+        <li><i class="ic-document-1"></i><a rel="section2" class="help-list">扫描员扫描</a></li>
+        <li><i class="ic-document-1"></i><a rel="section3" class="help-list">部门审批</a></li>
+        <li><i class="ic-document-1"></i><a rel="section4" class="help-list">归口审批</a></li>
+        <li><i class="ic-document-1"></i><a rel="section5" class="help-list">分公司财务稽核</a></li>
+        <li><i class="ic-document-1"></i><a rel="section6" class="help-list">SSC费用会计</a></li>
+        <li><i class="ic-document-1"></i><a rel="section7" class="help-list">SSC复核会计</a></li>
+        <li><i class="ic-document-1"></i><a rel="section8" class="help-list">SSC出纳</a></li>
+        <li><i class="ic-document-1"></i><a rel="section9" class="help-list">查询支付信息</a></li>
+      </ul>
+    </div>
     <div id="ws-container" class="nano-content">
       <div class="help-title">
         <div class="w-container help">
           <ul class="help-path"><a id="fastMenu"></a></ul>
-          <p>中国电信MMS帮助中心</p>
+          <p id="mmstitle">MSS系统-合同制员工年休假补贴报账指引</p><img id="mmslogo" src="./content/images/logo.png">
         </div>
       </div>
       <div class="w-container help">
         <div class="help-contents">
-          <div class="help-menu"><i class="ic-folder-1"></i>
-            <h2 class="scrolltop">快速开始</h2>
-            <ul>
-              <li><i class="ic-document-1"></i><a rel="section0" class="help-list">旧财辅报账平台</a></li>
-              <li><i class="ic-document-1"></i><a rel="section1" class="help-list">新财辅报账平台</a></li>
-              <li><i class="ic-document-1"></i><a rel="section2" class="help-list">扫描员扫描</a></li>
-              <li><i class="ic-document-1"></i><a rel="section3" class="help-list">部门审批</a></li>
-              <li><i class="ic-document-1"></i><a rel="section4" class="help-list">归口审批</a></li>
-              <li><i class="ic-document-1"></i><a rel="section5" class="help-list">分公司财务稽核</a></li>
-              <li><i class="ic-document-1"></i><a rel="section6" class="help-list">SSC费用会计</a></li>
-              <li><i class="ic-document-1"></i><a rel="section7" class="help-list">SSC复核会计</a></li>
-              <li><i class="ic-document-1"></i><a rel="section8" class="help-list">SSC出纳</a></li>
-              <li><i class="ic-document-1"></i><a rel="section9" class="help-list">查询支付信息</a></li>
-            </ul>
-          </div>
           <div id="help_content" class="help-content">
             <h1>员工年休假补贴报账操作指引</h1>
             <section id="section0">
@@ -128,14 +129,14 @@
             </section>
           </div>
         </div>
-      </div>
-      <div class="footer">
-        <div class="w-container">
-          <p>&copy; 2015,
-            <!--a choice form-->
-            <!--|  , Inc. All Rights Reserved.-->
-            <!--br--><strong>------MMs系统------</strong>
-          </p>
+        <div class="footer">
+          <div class="w-container">
+            <p>&copy; 2015,
+              <!--a choice form-->
+              <!--|  , Inc. All Rights Reserved.-->
+              <!--br--><strong>------MMs系统------</strong>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -148,11 +149,5 @@
         vFactor: 0.3,
         mobile: false
     }
-  </script>
-  <script>
-    $('#ws-container').animate({scrollTop: "0"},function(){
-        mmsEvent.helpMenuFixed();
-        mmsEvent.helpSectionScroll();
-    });
   </script>
 </html>

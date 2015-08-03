@@ -1,6 +1,22 @@
 /**
  * Created by janisesheng on 15-7-20.
  */
+
+$(document).ready(function() {
+    //检测是否使手机 或 pc
+
+    if(checkDevice_Browser.fastCkeckDevice()=="pc"){
+        //mmsEvent.helpMenuFixed();
+        mmsEvent.helpMenuFixedMobile();
+    }else{
+        mmsEvent.helpMenuFixedMobile();
+    }
+
+    mmsEvent.helpSectionScroll();
+
+});
+
+
 var mmsEvent = (function(){
     //----------------------help menu点击切换section----------------------------
 
@@ -12,17 +28,42 @@ var mmsEvent = (function(){
         var scrollY =0; //滚动的定义初始值 默认是0
         $("body").on("update", function(event, values){
             scrollY = values.position;
-            $(elm).css('position', ((scrollY) > startPos) ? 'fixed' : 'relative');
-            $(elm).css('top', ((scrollY) > startPos) ? '0px' : '');
+            console.log(scrollY);
+            $(elm).css('position', ((scrollY+70) > startPos) ? 'fixed' : 'relative');
+            $(elm).css('top', ((scrollY) > startPos) ? '70px' : '');
         });
     }
+    var ismenu = true ;
+    var helpMenuFixedMobile = function (){
+        $("#fastMenu").click(function () {
+            if(ismenu){
+                $(".help-menu").css({"opacity":"1",
+                    "height":"auto",
+                    "left":"0"});
+            }else{
+                $(".help-menu").css({"opacity":"0",
+                    "height":"0",
+                    "left":"-100%"});
+            }
+            ismenu=!ismenu;
 
-    //点击menu 滚动切换section的内容
+        });
+        $(".help-list,.scrolltop").click(function (){
+            $(".help-menu").css({"opacity":"0",
+                "height":"0",
+                "left":"-100%"});
+            ismenu = true ;
+        });
+
+    }
+
+/*    //点击menu 滚动切换section的内容
     var helpSectionScroll = function (){
         //初始获取每个section离顶部的距离
         var sectionTop = [] ;
+        var offestTop = 70 ; //偏移量
         $(".help-menu ul li").each(function(i){
-            sectionTop[i]=$("#section"+i+"").offset().top;
+            sectionTop[i]=$("#section"+i+"").offset().top-offestTop;
             $(".help-list").eq(i).attr("date_Y", sectionTop[i]);
         });
         console.log(sectionTop);
@@ -38,10 +79,24 @@ var mmsEvent = (function(){
         $(".scrolltop").click(function () {
             $('#ws-container').animate({scrollTop: "0"});
         });
+    }*/
+
+    var helpSectionScroll = function (){
+        //获取当前点击的对象
+        $(".help-list").click(function () {
+            var sectionTop =$(this).attr("rel");
+            $(".nano").nanoScroller({ scrollTo: $('#'+sectionTop)});
+            $(this).css("color","#2DC530");
+        });
+        $(".scrolltop").click(function () {
+            $('#ws-container').animate({scrollTop: "0"});
+        });
     }
+
     return {
         helpMenuFixed:helpMenuFixed,
-        helpSectionScroll:helpSectionScroll
+        helpSectionScroll:helpSectionScroll,
+        helpMenuFixedMobile:helpMenuFixedMobile
     }
 })();
 

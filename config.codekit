@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18892",
 "files": {
+	"\/company.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/company.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/company.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -453,6 +462,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/content\/images\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20334,
+		"inputAbbreviatedPath": "\/content\/images\/logo.png",
+		"outputAbbreviatedPath": "\/content\/images\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/document\/合同制员工年休假补贴报账指引图片\/1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -862,8 +882,8 @@
 		},
 	"\/script\/checkDeviceBrowser.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/checkDeviceBrowser.js",
 		"outputAbbreviatedPath": "\/script\/min\/checkDeviceBrowser-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -873,8 +893,8 @@
 		},
 	"\/script\/event.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/event.js",
 		"outputAbbreviatedPath": "\/script\/min\/event-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -884,8 +904,8 @@
 		},
 	"\/script\/fastclick.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/fastclick.js",
 		"outputAbbreviatedPath": "\/script\/min\/fastclick-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -895,8 +915,8 @@
 		},
 	"\/script\/help.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/help.js",
 		"outputAbbreviatedPath": "\/script\/min\/help-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -906,8 +926,8 @@
 		},
 	"\/script\/jquery.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/jquery.min.js",
 		"outputAbbreviatedPath": "\/script\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -915,21 +935,10 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/script\/min\/mms_Event-min.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/script\/min\/mms_Event-min.js",
-		"outputAbbreviatedPath": "\/script\/min\/min\/mms_Event-min-min.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1,
-		"syntaxCheckerStyle": 1
-		},
 	"\/script\/mms_Event.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/mms_Event.js",
 		"outputAbbreviatedPath": "\/script\/min\/mms_Event-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -939,8 +948,8 @@
 		},
 	"\/script\/scroller.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/scroller.js",
 		"outputAbbreviatedPath": "\/script\/min\/scroller-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -950,8 +959,8 @@
 		},
 	"\/script\/scrollReveal.min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/scrollReveal.min.js",
 		"outputAbbreviatedPath": "\/script\/min\/scrollReveal.min-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -961,8 +970,8 @@
 		},
 	"\/script\/wsOtherEvent-min.js": {
 		"fileType": 64,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
 		"inputAbbreviatedPath": "\/script\/wsOtherEvent-min.js",
 		"outputAbbreviatedPath": "\/script\/min\/wsOtherEvent-min-min.js",
 		"outputPathIsOutsideProject": 0,
@@ -1291,7 +1300,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "CSVFX-User",
+"lastSavedByUser": "Janisesheng",
 "manualImportLinks": {
 	},
 "projectAttributes": {

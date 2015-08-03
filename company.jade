@@ -7,9 +7,16 @@ html(class='js flexbox canvas canvastext webgl no-touch geolocation postmessage 
         meta(name='description', content='巧思 choice form 最专业的在线问卷系统')
         meta(name='keywords', content='choice form,form,forms,choice,巧思问卷,调研,表单,在线问卷,问卷设计,')
     body.nano
+        .help-menu
+            i.ic-folder-1
+            h2.scrolltop 快速开始
+            ul
+                each val, index in ['旧财辅报账平台', '新财辅报账平台', '扫描员扫描', '部门审批', '归口审批', '分公司财务稽核','SSC费用会计','SSC复核会计','SSC出纳','查询支付信息']
+                    li
+                        i.ic-document-1
+                        a.help-list(rel= 'section' + index)= val
         #ws-container.nano-content
             include content/help-menu
-            include ./template/footer
     script.
         $(".nano").nanoScroller({iOSNativeScrolling: true});
     script.
@@ -19,10 +26,3 @@ html(class='js flexbox canvas canvastext webgl no-touch geolocation postmessage 
             vFactor: 0.3,
             mobile: false
         }
-    script.
-        $('#ws-container').animate({scrollTop: "0"},function(){
-            mmsEvent.helpMenuFixed();
-            mmsEvent.helpSectionScroll();
-        });
-
-
